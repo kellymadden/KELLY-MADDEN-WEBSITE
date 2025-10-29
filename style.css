@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelly Madden - new</title>
+  
+  <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
     /* =======================
        KELLY MADDEN – MINIMAL MODERN HOMEPAGE
        ======================= */
@@ -512,3 +525,254 @@
 .slide.active {
   z-index: 1;
 }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- TOP TAUPE BOX WITH LARGE WHITE TITLE -->
+  <div class="top-taupe-box">
+    <h1>KELLY MADDEN</h1>
+    <!-- Top menu (optional, duplicate of main menu) -->
+    <nav class="main-nav">
+      <ul>
+         <li class="dropdown">
+               <button class="dropdown-toggle" aria-label="Toggle Gallery Menu">
+          <a class="dropdown-link" href="/gallery.html">Gallery</a>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="/kineticmoments.html">Kinetic Moments</a></li>
+            <li><a href="/paintings.html">Paintings</a></li>
+            <li><a href="/drawings.html">Drawings</a></li>
+            <li class="submenu"><a href="/catalogue.html"><span class="caret-right">&#8250;</span>Catalogue</a></li>
+          </ul>
+        </li>
+        </ul>
+        </nav>
+        
+       <nav class="main-nav"> <ul><li><a href="/store.html">Exploration</a></li>
+        <li><a href="/bio.html">Bio</a></li>
+        <li><a href="/reference.html">Store</a></li>
+        </ul>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="custom-wrapper">
+
+  <!-- SLIDESHOW -->
+<div class="slideshow-container">
+  <div class="slide active">
+  <video class="gallery-media" autoplay muted loop playsinline preload="none">
+      <source src="https://www.kellymadden.com/images/BLUEWAVE.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+    <div class="caption">Blue Wave video</div>
+  </div>
+  
+  
+
+ 
+
+
+  <div class="slide">
+    <img src="https://iili.io/KkPgxTv.jpg" alt="Slide 2" loading="lazy">
+    <div class="overlay"></div>
+    <div class="caption">Blue Silence</div>
+  </div>
+
+  <div class="slide">
+    <img src="https://iili.io/KkPgnyJ.jpg" alt="Slide 3" loading="lazy">
+    <div class="overlay"></div>
+    <div class="caption">Metallic Dreams</div>
+  </div>
+
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+
+  <div class="dots-container">
+    <div class="dot active" data-index="0"></div>
+    <div class="dot" data-index="1"></div>
+    <div class="dot" data-index="2"></div>
+  </div>
+</div>
+  <!-- END SLIDESHOW -->
+
+
+      
+    <!-- Section 1 -->
+    <div class="custom-box">
+      <p>
+          <img src="images/1_X_07242_KELLYMADDEN.jpeg" width="75%" height="75%" alt="Art 2">
+      </p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="placeholder-box">
+      <h2>Section 2 Title</h2>
+      
+              <h2 class="large-heading">K M</h2>
+              
+
+            <p>Artist | Resides / Works : Dallas, TX</p>
+      <p>Works that reflect modern techniques and elegant effects through the synergy of concept and aesthetic.</p>
+      <p>Using mixed media to reflect on contemporary life, I combine intricate, studied techniques with subtle textural details, creating a unique visual elegance that serves to ground underlying concepts.</p>
+      <p>Often merging industrial materials like concrete, wood and steel with delicate, handcrafted elements, with a focus demonstrating unexpected elegance. The juxtaposition of these modern techniques is key to exploring my core concepts of impermanence and memory.</p>
+      <p>Artist statement, ask yourself the following questions:
+        <br/>What do you make? (Your medium and subject)
+        <br/>How do you make it? (Your specific techniques and process)
+        <br/>Why do you make it? (Your core ideas or concepts)
+      </p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="placeholder-box">
+      <h2>Section 3 Title</h2>
+      <img src="https://via.placeholder.com/800x400?text=Placeholder+Image" alt="Placeholder"/>
+      <p>FEATURED : This is a placeholder for your third section. Add text, links, or visuals here.</p>
+    </div>
+    
+
+
+<div class="contact-box">
+  <form id="custom-contact-form" action="https://formspree.io/f/xldpkakl" method="POST" class="custom-contact-form">
+    <div class="form-title"><h2>Contact</h2></div>
+
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Message </label>
+    <textarea id="message" name="message" rows="5"></textarea>
+
+    <!-- Centered checkbox group -->
+<div class="checkboxes">
+  <div class="checkbox-row">
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+    <label for="subscribe">Yes, I'd like to subscribe and receive exclusive offers.</label>
+  </div>
+
+  <div class="checkbox-row">
+    <input type="checkbox" id="meetup" name="meetup" value="yes" />
+    <label for="meetup">Let's find a patio and meet for coffee.</label>
+  </div>
+</div>
+
+
+    <button type="submit">Send</button>
+
+    <!-- Confirmation message -->
+    <p id="form-confirmation" style="display:none; text-align:center; color:#aa80ff; margin-top:1rem; font-weight:bold;">
+      Thank you! Your message has been sent.
+    </p>
+  </form>
+</div>
+</div>
+
+
+
+
+<script>
+document.getElementById('custom-contact-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // prevent page refresh
+
+  const form = this;
+  const confirmation = document.getElementById('form-confirmation');
+
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(response => {
+    if (response.ok) {
+      confirmation.style.display = 'block';
+      form.reset(); // clear all fields including checkboxes
+    } else {
+      alert('Oops! There was a problem submitting your form.');
+    }
+  }).catch(error => {
+    alert('Oops! There was a problem submitting your form.');
+  });
+});
+</script>
+
+
+<!-- ====== SECTION 4: FOOTER ====== -->
+  <footer class="custom-footer">
+    <p class="social-links">
+      <a href="https://www.instagram.com/kellymaddenstudio" target="_blank">Instagram</a> | <a href="https://www.facebook.com/kellymaddenstudio" target="_blank">Facebook</a> | <a href="https://x.com/kellymadden_art" target="_blank">Twitter</a>
+    </p>
+    <p class="policy-links">
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </p>
+    
+    <hr class="custom-hr">
+    
+        <p>© 2025 Kelly Madden. All rights reserved.</p>
+        
+  <h5> Website design & development by Kelly Madden</h5> 
+
+<p>(C)(L)MMMCLIII</p>   
+  </footer>
+  
+
+<!-- ====== JAVASCRIPT ====== -->
+  <!-- JS: Dropdown toggle + fade effect -->
+ <script defer>
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      const button = drop.querySelector('.dropdown-toggle');
+      const menu = drop.querySelector('.dropdown-menu');
+
+      // Click toggle
+      button.addEventListener('click', e => {
+        drop.classList.toggle('open');
+      });
+
+      // Close if clicking outside
+      document.addEventListener('click', e => {
+        if (!drop.contains(e.target)) drop.classList.remove('open');
+      });
+
+      // Hover fade effect
+      drop.addEventListener('mouseenter', () => drop.classList.add('open'));
+      drop.addEventListener('mouseleave', () => drop.classList.remove('open'));
+    });
+  </script>
+  
+  
+  <!-- JS: Slideshow Section 2 -->
+<script defer>
+  const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+let index = 0;
+
+function showSlide(n) {
+  slides[index].classList.remove("active");
+  dots[index].classList.remove("active");
+  index = (n + slides.length) % slides.length;
+  slides[index].classList.add("active");
+  dots[index].classList.add("active");
+}
+
+// auto-play every 6 sec
+let slideInterval = setInterval(() => showSlide(index + 1), 6000);
+
+// nav buttons
+document
+  .querySelector(".prev")
+  .addEventListener("click", () => showSlide(index - 1));
+document
+  .querySelector(".next")
+  .addEventListener("click", () => showSlide(index + 1));
+
+// dots click
+dots.forEach((dot) => {
+  dot.addEventListener("click", () => showSlide(parseInt(dot.dataset.index)));
+});
+</script>
+
+</body>
+</html>
